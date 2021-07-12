@@ -1,4 +1,4 @@
-/*-------------------/Fonts/----------------- */
+/*--------nn-----------/Fonts/----------nn------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 body{
@@ -18,7 +18,7 @@ main{
     margin-top: 21px;
    
 }
-/* --------------/top players style/--------------- */
+/* ------nn--------/top players style/--------nn------- */
 .top-players{
     margin-bottom: 30px;
 }
@@ -52,7 +52,7 @@ hr{
     margin-bottom: 27px;
 }
 
-/* ----------/top blog styles/---------- */
+/* -----nn-----/top blog styles/-----nn----- */
 .blogs{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -79,5 +79,35 @@ hr{
     text-decoration: none;
     font-size: 16px;
     color: #562EFF;
+}
+
+/* --------nn------------courses style-----------nn----- */
+
+.course-banner img{
+    width: 266px;
+    height: 141px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color:#AEAEAE;
+    ;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.course-duration{
+    font-size: 14.6913px;
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+    color: #FF4A60;
+    
+
+}
+.fa-clock{
+    color: #FF4A60;
 
 }
