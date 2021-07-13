@@ -122,3 +122,45 @@ hr{
     color: #FF4A60;
 
 }
+/* -------------nn--------Media Queries-----------nn---- */
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        background-color:whitesmoke;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .courses{
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap:50px ;
+        justify-content: space-evenly;
+        
+    }
+
+    .players, .blog{
+        flex-direction: column;
+        align-items:center;
+    }
+    
+}
+
+/* tablete devices */
+
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .player, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .players, .blog{
+        flex-direction: column;
+        align-items:center;
+    }
+}
