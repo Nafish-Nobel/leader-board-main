@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/6a4feef768.js" crossorigin="anonymous"></script>
     <!-- style sheet -->
@@ -21,7 +29,7 @@
         <!-- ---nn---/top players and top blogs/-----nn--------------- -->
         <section class="container">
             <div class="top-players">
-                <h2 class="section-title">Top Players</h2>
+                <h2 id="top-player" class="section-title">Top Players</h2>
                 <div class="players"> 
                     <!-- .player*6>img[src="images/players/player-$.png"]+h3{Top Player-$} -->
                     <div class="player">
@@ -53,7 +61,7 @@
             </div>
             <hr>
             <div class="top-blogs">
-                <h2 class="section-title">Top Blogs</h2>
+                <h2 id="top-blog" class="section-title">Top Blogs</h2>
                 <div class="blogs">
                     <article class="blog">
                         <div class="thumbnail">
@@ -110,85 +118,148 @@
         <!-- ---nn---/top players and top blogs end/-----nn----------- -->
         
         <!-- -----nn---------/Latest Course/---------nn--------------- -->
-        <div class="container"><h2 class="section-title">Letest Courses</h2>
-            <div class="courses">
-                <div class="course">
-                    <div class="course-banner">
-                        <img src="images/courses/course-1.png" alt="">
-                    </div>
-                    <div class="course-detail">
-                        <h3 class="course-title">React - The Complete Guide 2022</h3>
-                        <P class="course-author">Reed Krakoff.</P>
-                        <div class="course-info">
-                            <div>
-                        <i class="fas fa-star filled"></i>
-                        <i class="fas fa-star filled"></i>
-                        <i class="fas fa-star filled"></i>
-                        <i class="fas fa-star filled"></i>
-                        <i class="fas fa-star empty"></i>
-                    <span>4.5</span>
-                    </div>
-                    <div class="course-duration">
-                        <i class="fas fa-clock"></i>
-                        01:30hr
-                    </div>
-
-                        </div>
-                    </div>
-
-                </div>
-                    <!-- --------nn--------course-2----------nn------ -->
-                <div class="course">
-                    <div class="course-banner">
-                        <img src="images/courses/course-2.png" alt="">
-                    </div>
-                    <div class="course-detail"> <h3 class="course-title">Powerpoint 2020 Master Powerpoint Course</h3>
-                        <P class="course-author">Walter Scott.</P>
-                        <div class="course-info">
-                            <div>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star empty"></i>
-                                <i class="fas fa-star empty"></i>
-                            <span>4.3</span>
-                            </div>
-                            <div class="course-duration">
-                                <i class="fas fa-clock"></i>
-                                01:20hr
-                            </div>
-                        </div>
-                    </div>
         
-                </div>
-                    <!-- -------nn---------course-3----------nn------ -->
-                <div class="course">
-                    <div class="course-banner">
-                        <img src="images/courses/course-3.png" alt="">
-                    </div>
-                    <div class="course-detail"> <h3 class="course-title">The Complete JavaScript Course 2020</h3>
-                        <P class="course-author">Reed Krakoff.</P>
-                        <div class="course-info">
-                            <div>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star empty"></i>
-                            <span>4.5</span>
-                            </div>
-                            <div class="course-duration">
-                                <i class="fas fa-clock"></i>
-                                01:30hr
-                            </div>
+            <div class="container"><h2 class="section-title">Letest Courses</h2>
+                <div class="courses">
+                    <div class="course">
+                        <div class="course-banner">
+                            <img src="images/courses/course-1.png" alt="">
                         </div>
-                    </div>
-        
-                </div>
-
-            </div>
-        </div>
-    </main>
+                        <div class="course-detail">
+                            <h3 class="course-title">React - The Complete Guide 2022</h3>
+                            <P class="course-author">Reed Krakoff.</P>
+                            <div class="course-info">
+                                <div>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star empty"></i>
+                        <span>4.5</span>
+                        </div>
+                        <div class="course-duration">
+                            <i class="fas fa-clock"></i>
+                            01:30hr
+                        </div>
     
+                            </div>
+                        </div>
+    
+                    </div>
+                        <!-- --------nn--------course-2----------nn------ -->
+                    <div class="course">
+                        <div class="course-banner">
+                            <img src="images/courses/course-2.png" alt="">
+                        </div>
+                        <div class="course-detail"> <h3 class="course-title">Powerpoint 2020 Master Powerpoint Course</h3>
+                            <P class="course-author">Walter Scott.</P>
+                            <div class="course-info">
+                                <div>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star empty"></i>
+                                    <i class="fas fa-star empty"></i>
+                                <span>4.3</span>
+                                </div>
+                                <div class="course-duration">
+                                    <i class="fas fa-clock"></i>
+                                    01:20hr
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                        <!-- -------nn---------course-3----------nn------ -->
+                    <div class="course">
+                        <div class="course-banner">
+                            <img src="images/courses/course-3.png" alt="">
+                        </div>
+                        <div class="course-detail"> <h3 class="course-title">The Complete JavaScript Course 2020</h3>
+                            <P class="course-author">Reed Krakoff.</P>
+                            <div class="course-info">
+                                <div>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star empty"></i>
+                                <span>4.5</span>
+                                </div>
+                                <div class="course-duration">
+                                    <i class="fas fa-clock"></i>
+                                    01:30hr
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+    
+                </div>
+            </div>
+        
+
+        <section class="my-2">
+            <div class="container px-4">
+                <h2 class="text-center text-white p-2 fw-bolder">To Do Area</h2>
+              <div class="row gx-5">
+                <div class="col-8">
+                  <!-- input field -->
+                  <div class="mtb-5 d-flex">
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      placeholder="Add a task"
+                      aria-label="Search"
+                      id="task-input"
+                    />
+                    <button
+                      class="btn btn-outline-success"
+                      type="submit"
+                      id="add-task-button"
+                    >
+                      Add Task
+                    </button>
+                  </div>
+                  <!-- end of input field -->
+                 <!-- task list -->
+                  <div class="p-5" id="task-list">
+      
+      
+      
+      
+                  </div>
+                  <!-- task list -->
+                </div>
+                <div class="col-4">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <th scope="row">total-task</th>
+                        <td id="total-task">0</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">done</th>
+                        <td id="done-task">0</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">undone</th>
+                        <td id="undone-task">0</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+    </main>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"
+  ></script>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
